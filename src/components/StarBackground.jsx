@@ -30,7 +30,7 @@ export const StarBackground = () => {
         for (let i = 0; i < numberOfStars; i++){
             newStars.push({
                 id: i,
-                size: Math.random() * 3 + 1,
+                size: Math.random() * 10 + 5,
                 x: Math.random() * 100,
                 y: Math.random() * 100,
                 opacity: Math.random() * 0.5 + 0.5,

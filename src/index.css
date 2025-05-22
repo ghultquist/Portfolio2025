@@ -143,8 +143,8 @@
 }
 
 @utility star {
-  @apply absolute rounded-full bg-white;
-  box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  @apply absolute bg-white;
+  clip-path: polygon(50% 0%, 60% 40%, 90% 50%, 60% 60%, 50% 100%, 40% 60%, 10% 50%, 40% 40%);
 }
 
 @utility meteor {
