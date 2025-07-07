@@ -43,7 +43,7 @@ export const SkillsSection = () => {
                     My <span className="text-primary"> Skills</span>
                 </h2>
 
-                <div className="flex flex-wrape justify-center gap-4 mb-12">
+                <div className="flex flex-wrap justify-center gap-4 mb-12">
                     {categories.map((category, key) => (
                         <button 
                             key={key} 
@@ -68,7 +68,7 @@ export const SkillsSection = () => {
                             </div>
                             <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                                 <div 
-                                    className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out" 
+                                    className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
                                     style={{width: skill.level + "%"}}
                                 />
                             </div>
