@@ -64,6 +64,53 @@
 
 @layer base {
   :root {
+    --background: 45,100%,99%;
+    --foreground: 0,0%,18%;
+
+    --card: 338,61%,94%;
+
+    --primary: 281,89%,78%;
+    --primary-foreground: 45,100%,99%;
+
+    --border: 214 32% 91%;
+
+    --light-blue: #DAEEFD;
+    --mid-blue: #A8D6FB;
+    --dark-blue: #06467A;
+
+    --light-pink: #F8DFFB;
+    --mid-pink: #FDA9FA;
+    --dark-pink: #83027E;
+    
+    --light-coral: #F9E6ED;
+    --mid-coral: #FDA9C2;
+
+    --light-purple: #F4DDFF;
+    --mid-purple: #D995F9;
+    --dark-purple: #7008A1;
+
+    --light-periwinkle: #DCD7FB;
+    --mid-periwinkle: #AB9DF7;
+    --dark-periwinkle: #463370;
+
+    --logo-light-purple: #E7C8FC;
+    --logo-periwinkle: #5A60D7;
+    --logo-fuschia: #BE4CFF;
+  }
+
+  .dark {
+    --background: 269,100%,10%;
+    --foreground: 45,100%,99%;
+
+    --card: 222 47% 8%;
+
+    --primary: 250 65% 65%;
+    --primary-foreground: 213 31% 91%;
+
+    --border: 217 33% 20%;
+  }
+
+  .light_example {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
@@ -75,7 +122,7 @@
     --border: 214 32% 91%;
   }
 
-  .dark {
+  .dark_example {
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
 

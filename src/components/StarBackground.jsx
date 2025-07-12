@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 
-// sparkles have id, size, x, y, opacity, animationDuration
+// sparkles have id, size, x, y, color, opacity, animationDuration
 // meteors have id, size, x, y, delay, animationDuration (maybe add fade-in generation with opacity and length growing)
 
+const starColors = ["pink", "blue", "coral", "purple", "periwinkle"]
 
 export const StarBackground = () => {
     const [stars, setStars] = useState([]);
@@ -33,6 +34,7 @@ export const StarBackground = () => {
                 size: Math.random() * 10 + 5,
                 x: Math.random() * 100,
                 y: Math.random() * 100,
+                color: starColors[Math.floor(Math.random() * starColors.length)],
                 opacity: Math.random() * 0.5 + 0.5,
                 animationDuration: Math.random() * 4 + 2
             });
@@ -68,12 +70,13 @@ export const StarBackground = () => {
                     height: star.size + "px",
                     left: star.x + "%",
                     top: star.y + "%",
+                    background: "var(--mid-" + star.color + ")",
                     opacity: star.opacity,
                     animationDuration: star.animationDuration + "s",
                 }}/>
             ))}
 
-            {meteors.map((meteor) => (
+            {/* {meteors.map((meteor) => (
                 <div key={meteor.id} className="meteor animate-meteor" style={{
                     width: meteor.size * 50 + "px",
                     height: meteor.size + "px",
@@ -82,7 +85,7 @@ export const StarBackground = () => {
                     animationDelay: meteor.delay,
                     animationDuration: meteor.animationDuration + "s",
                 }}/>
-            ))}
+            ))} */}
         </div>
     );
 };
